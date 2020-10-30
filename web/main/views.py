@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import datetime
 
+# Create your views here.
 def index(request):
   now = datetime.datetime.now()
-  return HttpResponse(f'こんにちは！ただいまの日時は {now} です！')
+  return HttpResponse(f'Hello! now, datetime is {now}')
